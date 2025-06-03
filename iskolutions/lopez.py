@@ -16,8 +16,22 @@ def display_get_choice():
     except ValueError:
         print("Invalid input.")
         return UNSET_OPTION
+    
+def process_choice(choice):
+    match choice:
+        case 1:
+            pass # TODO: replace function call
+        case 2:
+            pass # TODO: replace function call
+        case 3:
+            pass # TODO: replace function call
+        case 4:
+            pass # TODO: replace function call
+        case _:
+            pass # TODO: replace function call
 
 def jakim():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
         choice = display_get_choice()
+        process_choice(choice)
