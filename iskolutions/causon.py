@@ -1,6 +1,5 @@
 from os import system
 import re
-import random
 
 UNSET_OPTION = -1
 EXIT_OPTION = 4
