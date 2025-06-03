@@ -1,4 +1,4 @@
-from iskolutions import causon
+from iskolutions import causon, efondo
 from os import system
 
 UNSET_OPTION = -1
@@ -28,8 +28,7 @@ def process_choice(choice):
         case 1:
             causon.miko()
         case 2:
-            # TODO (Efondo): replace your function call here
-            pass
+            efondo.kyle()
         case 3:
             # TODO (Franco): replace your function call here
             pass
