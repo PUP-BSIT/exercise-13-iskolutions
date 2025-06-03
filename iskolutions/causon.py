@@ -1,4 +1,5 @@
 from os import system
+import re
 import random
 
 UNSET_OPTION = -1
@@ -28,8 +29,7 @@ def process_choice(choice):
         case 2:
             display_goals()
         case 3:
-            # TODO: implement password checker
-            pass
+            password_checker()
         case 4:
             system("cls")
         case _:
@@ -59,7 +59,37 @@ def display_goals():
     print("Pass INTE 202.")
     print("Save enough money to upgrade laptop.")
     print("Create a project to strengthen portfolio.")
-
+    
+def password_checker():
+    system("cls")
+    print("Password Checker by Miko")
+    password = input("Type a password to check its strength: ")
+    
+    # checks if the password for the criteria using regex
+    has_upper = bool(re.search("[A-Z]", password))
+    has_lower = bool(re.search("[a-z]", password))
+    has_digit = bool(re.search("\d", password))
+    has_special = bool(re.search("[!@#$%^&*(),.?\":{}|<>]", password))
+    
+    strength_criteria = {
+        "With Uppercase?": has_upper,
+        "With Lowercase?": has_lower,
+        "With Digits?": has_digit,
+        "With Special Characters?": has_special
+    }
+    strength = sum(strength_criteria)
+    length = len(password)
+    
+    for key, value in strength_criteria.items():
+        print(f"{key} {"Yes." if {value} else "No."}")
+    
+    if length >= 12 and strength == 4:
+        print("Your password strength is: High")
+    elif length >= 8 and strength >= 3:
+        print("Your password strength is: Average")
+    else:
+        print("Your password strength is: Low")
+    
 def miko():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
