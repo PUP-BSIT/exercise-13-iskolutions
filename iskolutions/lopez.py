@@ -31,6 +31,7 @@ def process_choice(choice):
             pass # TODO: replace function call
 
 def display_information():
+    print("\nGet to know me better:")
     print("Name: Jakim D. Lopez")
     print("Age: 20")
     print("Gender: Male")
