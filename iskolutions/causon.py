@@ -45,7 +45,7 @@ def display_basic_info():
     print("Birthday: June 9, 2005")
     print("Civil Status: Single")
     print("Nationality: Filipino")
-    input("\n Press Enter to Continue...")
+    input("\nPress Enter to Continue...")
     
 def display_goals():
     system("cls")
@@ -59,6 +59,7 @@ def display_goals():
     print("Pass INTE 202.")
     print("Save enough money to upgrade laptop.")
     print("Create a project to strengthen portfolio.")
+    input("\nPress Enter to Continue...")
     
 def password_checker():
     system("cls")
