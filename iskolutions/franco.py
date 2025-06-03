@@ -112,8 +112,16 @@ def pearl():
 
     while True:
         clear_screen()
+
         print("Hello there, I am Fernette Pearl Franco!")
         print_border()
+        print("1. Basic Information")
+        print("2. Goals")
+        print("3. A Random Fact")
+        print("4. Comment from Causon")
+        print("5. Comment from Efondo")
+        print("6. Comment from Gagtan")
+        print("7. Comment from Lopez")
         print("8. Exit")
         print_border()
 
