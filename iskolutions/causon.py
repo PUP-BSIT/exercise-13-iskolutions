@@ -90,6 +90,8 @@ def password_checker():
         print("Your password strength is: Average")
     else:
         print("Your password strength is: Low")
+        
+    input("\nPress Enter to Continue...")
     
 def miko():
     choice = UNSET_OPTION
