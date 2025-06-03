@@ -1,4 +1,5 @@
 from os import system
+import requests
 
 UNSET_OPTION = -1
 EXIT_OPTION = 4
