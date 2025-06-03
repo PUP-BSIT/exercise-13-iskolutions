@@ -78,19 +78,21 @@ def password_checker():
         "With Digits?": has_digit,
         "With Special Characters?": has_special
     }
-    strength = sum(strength_criteria.values())
+    criterias_passed = sum(strength_criteria.values())
     length = len(password)
     
     for key, value in strength_criteria.items():
         print(f"{key} {"Yes." if {value} else "No."}")
     
-    if length >= 12 and strength == 4:
-        print("Your password strength is: High")
-    elif length >= 8 and strength >= 3:
-        print("Your password strength is: Average")
+    if length >= 12 and criterias_passed == 4:
+        strength = "High" 
+    elif length >= 8 and criterias_passed >= 3:
+        strength = "Average"
     else:
-        print("Your password strength is: Low")
-        
+        strength = "Low"
+    
+    print(f"Your password strength is: {strength} "
+          + f"(Length: {length} Criteria Passed: {criterias_passed})")
     input("\nPress Enter to Continue...")
     
 def miko():
