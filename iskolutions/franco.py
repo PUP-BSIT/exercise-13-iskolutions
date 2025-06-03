@@ -30,9 +30,21 @@ def basic_information():
     print_border()
     return_to_main_menu()
 
+def goals():
+    print("GOALS:")
+    print_border()
+    print("1. To become a great web developer.")
+    print("2. To contribute to major projects that will be impactful.")
+    print("3. To learn new programming languages and frameworks.")
+    print("4. To build a personal portfolio website (on going).")
+
+    print_border()
+    return_to_main_menu()
+
 def pearl():
     menu_options = {
         "1": basic_information,
+        "2": goals,
     }
 
     while True:
