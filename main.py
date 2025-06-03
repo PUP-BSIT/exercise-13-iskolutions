@@ -45,7 +45,6 @@ def process_choice(choice):
             print("Invalid choice! Please select a valid option.")
             input("Press Enter to continue...")
             system("cls")
-            pass
 
 def main():
     choice = UNSET_OPTION
