@@ -22,10 +22,35 @@ def display_get_choice():
         print("Invalid input! Please enter a number.")
         return UNSET_OPTION
 
+def process_choice(choice):
+    match choice:
+        case 1:
+            # TODO (Causon): replace your function call here
+            pass
+        case 2:
+            # TODO (Efondo): replace your function call here
+            pass
+        case 3:
+            # TODO (Franco): replace your function call here
+            pass
+        case 4:
+            # TODO (Gagtan): replace your function call here
+            pass
+        case 5:
+            # TODO (Lopez): replace your function call here
+            pass
+        case 6:
+            system("cls")
+        case _:
+            print("Invalid choice! Please select a valid option.")
+            input("Press Enter to continue...")
+            system("cls")
+            pass
 
 def main():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
         choice = display_get_choice()
+        process_choice(choice)
 
 main()   
