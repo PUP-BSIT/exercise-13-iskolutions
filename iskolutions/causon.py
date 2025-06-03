@@ -78,7 +78,7 @@ def password_checker():
         "With Digits?": has_digit,
         "With Special Characters?": has_special
     }
-    strength = sum(strength_criteria)
+    strength = sum(strength_criteria.values())
     length = len(password)
     
     for key, value in strength_criteria.items():
