@@ -5,6 +5,7 @@ UNSET_OPTION = -1
 EXIT_OPTION = 4
 
 def display_get_choice():
+    system("cls")
     print("==========Miko Lorenz O. Causon==========")
     print("1. Basic Information")
     print("2. Goals")
