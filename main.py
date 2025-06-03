@@ -7,7 +7,7 @@ EXIT_OPTION = 6
 def display_get_choice():
     print("============Select an Option============")
     print("1. Miko Lorenz O. Causon")
-    print("2. ")
+    print("2. Aaron Kyle D. Efondo")
     print("3. ")
     print("4. ")
     print("5. ")
