@@ -16,8 +16,24 @@ def display_section(func):
     clear_screen()
     func()
 
+def basic_information():
+    print("BASIC INFORMATION:")
+    print_border()
+    print("Name: Fernette Pearl Franco")
+    print("Age: 19")
+    print("Gender: Female")
+    print("Occupation: Student (Aspiring Web Developer)")
+    print("Location: Bagumbayan, Taguig City, Philippines")
+    print("School: Polytechnic University of the Philippines")
+    print("Course: Bachelor of Science in Information Technology")
+
+    print_border()
+    return_to_main_menu()
+
 def pearl():
-    menu_options = {}
+    menu_options = {
+        "1": basic_information,
+    }
 
     while True:
         clear_screen()
