@@ -1,3 +1,4 @@
+from iskolutions import causon
 from os import system
 
 UNSET_OPTION = -1
@@ -5,7 +6,7 @@ EXIT_OPTION = 6
 
 def display_get_choice():
     print("============Select an Option============")
-    print("1. ")
+    print("1. Miko Lorenz O. Causon")
     print("2. ")
     print("3. ")
     print("4. ")
@@ -25,8 +26,7 @@ def display_get_choice():
 def process_choice(choice):
     match choice:
         case 1:
-            # TODO (Causon): replace your function call here
-            pass
+            causon.miko()
         case 2:
             # TODO (Efondo): replace your function call here
             pass
@@ -45,7 +45,6 @@ def process_choice(choice):
             print("Invalid choice! Please select a valid option.")
             input("Press Enter to continue...")
             system("cls")
-            pass
 
 def main():
     choice = UNSET_OPTION
