@@ -26,8 +26,7 @@ def process_choice(choice):
         case 1:
             display_basic_info()
         case 2:
-            # TODO: display goals
-            pass
+            display_goals()
         case 3:
             # TODO: implement password checker
             pass
@@ -47,6 +46,19 @@ def display_basic_info():
     print("Civil Status: Single")
     print("Nationality: Filipino")
     input("\n Press Enter to Continue...")
+    
+def display_goals():
+    system("cls")
+    print("Long-term goals:")
+    print("Secure a high paying job.")
+    print("Build and grow professional network through LinkedIn and " 
+          + "other means.")
+    print("Move to a more comfortable house.")
+    print("Be financially independent.")
+    print("\nShort-term Goals")
+    print("Pass INTE 202.")
+    print("Save enough money to upgrade laptop.")
+    print("Create a project to strengthen portfolio.")
 
 def miko():
     choice = UNSET_OPTION
