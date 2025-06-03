@@ -45,6 +45,7 @@ def display_basic_information():
     print("Civil Status: Single")
     print("Nationality: Filipino")
     print("Hobbies: Playing volleyball, coding, & watching movies")
+    input("\nPress enter to continue...")
 
 def display_goals():
     system("cls")
@@ -52,7 +53,8 @@ def display_goals():
     print("2. Live a good and healthy life with my family")
     print("3. Continuously learning both personal and professional life")
     print("4. Achieve financial stability and independence")
-
+    input("\nPress enter to continue...")
+    
 def rock_paper_scissors():
     print("\nROCK, PAPER, SCISSORS By Kyle")
 
