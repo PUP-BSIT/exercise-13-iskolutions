@@ -135,5 +135,3 @@ def pearl():
         else:
             print("Invalid choice. Please select a number between 1 and 8.")
             return_to_main_menu()
-
-pearl()
