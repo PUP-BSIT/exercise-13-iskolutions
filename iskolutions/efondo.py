@@ -1,4 +1,5 @@
 from os import system
+import random
 
 def display_basic_information():
     system("cls")
