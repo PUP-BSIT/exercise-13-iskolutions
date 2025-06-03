@@ -54,7 +54,7 @@ def display_goals():
     print("4. Achieve financial stability and independence")
 
 def rock_paper_scissors():
-    print("\nROCK, PAPER, SCISSORS")
+    print("\nROCK, PAPER, SCISSORS By Kyle")
 
     winning_combo = {
         'rock': 'scissors',
