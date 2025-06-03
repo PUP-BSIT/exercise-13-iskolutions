@@ -85,11 +85,29 @@ def random_fact():
     print_border()
     return_to_main_menu()
 
+def comment_section(comment_id):
+    comments = {
+        '5': "COMMENT FROM CAUSON:\n", #TODO(Causon): Add comment here
+        '6': "COMMENT FROM EFONDO:\n", #TODO(Efondo): Add comment here
+        '7': "COMMENT FROM GAGTAN:\n", #TODO(Gagtan): Add comment here
+        '8': "COMMENT FROM LOPEZ:\n"   #TODO(Lopez): Add comment here
+    }
+
+    print_border()
+    title = comments.get(comment_id)
+    print(title)
+    print_border()
+    return_to_main_menu()
+
 def pearl():
     menu_options = {
         "1": basic_information,
         "2": goals,
         "3": random_fact,
+        "4": lambda: comment_section('5'),
+        "5": lambda: comment_section('6'),
+        "6": lambda: comment_section('7'),
+        "7": lambda: comment_section('8')
     }
 
     while True:
