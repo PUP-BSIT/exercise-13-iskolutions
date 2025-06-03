@@ -32,7 +32,6 @@ def process_choice(choice):
             pass
         case 3:
             franco.pearl()
-            pass
         case 4:
             # TODO (Gagtan): replace your function call here
             pass
