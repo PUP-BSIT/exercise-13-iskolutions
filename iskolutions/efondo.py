@@ -36,7 +36,7 @@ def process_choice(choice):
             print("Invalid choice! Please select a valid option.")
             input("Press Enter to continue...")
             system("cls")
-            
+
 def display_basic_information():
     system("cls")
     print("Name: Aaron Kyle D. Efondo")
@@ -82,3 +82,9 @@ def rock_paper_scissors():
         if play_again != 'y':
             print("Thanks for playing")
             break
+
+def kyle():
+    choice = UNSET_OPTION
+    while choice != EXIT_OPTION:
+        choice = get_choice()
+        process_choice(choice)
