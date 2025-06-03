@@ -13,6 +13,15 @@ def get_choice():
     print("4. Exit")
     print("========================================")
 
+    try:
+        choice = int(input("Enter your choice: "))
+        system("cls")
+        return choice
+    except ValueError:
+        system("cls")
+        print("Invalid input! Please enter a number")
+        return UNSET_OPTION
+
 def display_basic_information():
     system("cls")
     print("Name: Aaron Kyle D. Efondo")
