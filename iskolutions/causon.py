@@ -82,7 +82,7 @@ def password_checker():
     length = len(password)
     
     for key, value in strength_criteria.items():
-        print(f"{key} {"Yes." if {value} else "No."}")
+        print(f"{key} {'Yes.' if value else 'No.'}")
     
     if length >= 12 and criterias_passed == 4:
         strength = "High" 
