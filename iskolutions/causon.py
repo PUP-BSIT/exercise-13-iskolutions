@@ -24,8 +24,7 @@ def display_get_choice():
 def process_choice(choice):
     match choice:
         case 1:
-            # TODO: display basic info
-            pass
+            display_basic_info()
         case 2:
             # TODO: display goals
             pass
@@ -39,6 +38,15 @@ def process_choice(choice):
             input("Press Enter to continue...")
             system("cls")
             pass
+        
+def display_basic_info():
+    system("cls")
+    print("Name: Miko Lorenz O. Causon")
+    print("Sex: Male")
+    print("Birthday: June 9, 2005")
+    print("Civil Status: Single")
+    print("Nationality: Filipino")
+    input("\n Press Enter to Continue...")
 
 def miko():
     choice = UNSET_OPTION
