@@ -20,7 +20,7 @@ def display_get_choice():
 def process_choice(choice):
     match choice:
         case 1:
-            pass # TODO: replace function call
+            display_information()
         case 2:
             pass # TODO: replace function call
         case 3:
@@ -29,6 +29,16 @@ def process_choice(choice):
             pass # TODO: replace function call
         case _:
             pass # TODO: replace function call
+
+def display_information():
+    print("Name: Jakim D. Lopez")
+    print("Age: 20")
+    print("Gender: Male")
+    print("Pronouns: He/Him")
+    print("Location: Wawa, Taguig City")
+    print("Civil Status: Single")
+    print("Nationality: Filipino")
+    print("\nPress any key to continue...")
 
 def jakim():
     choice = UNSET_OPTION
