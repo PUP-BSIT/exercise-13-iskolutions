@@ -50,6 +50,7 @@ def display_goals():
     print("-To strengthen my technical foundation for future "
           + " external-facing opportunities")
     print("-To pass INTEG 202 course this 2024-2025 school year")
+    print("\nPress any key to continue...")
 
 def jakim():
     choice = UNSET_OPTION
