@@ -1,6 +1,15 @@
 from os import system
 import random
 
+def get_choice():
+    system("cls")
+    print("==========Aaron Kyle D. Efondo==========")
+    print("1. Basic Information")
+    print("2. Goals")
+    print("3. Rock, Paper, Scissors")
+    print("4. Exit")
+    print("========================================")
+
 def display_basic_information():
     system("cls")
     print("Name: Aaron Kyle D. Efondo")
