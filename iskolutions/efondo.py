@@ -1,6 +1,9 @@
 from os import system
 import random
 
+UNSET_OPTION = -1
+EXIT_OPTION = 4
+
 def get_choice():
     system("cls")
     print("==========Aaron Kyle D. Efondo==========")
