@@ -2,7 +2,7 @@ from os import system
 import re
 
 UNSET_OPTION = -1
-EXIT_OPTION = 7
+EXIT_OPTION = 8
 
 def display_get_choice():
     system("cls")
@@ -13,7 +13,8 @@ def display_get_choice():
     print("4. Comment from Efondo")
     print("5. Comment from Gagtan")
     print("6. Comment from Lopez")
-    print("7. Exit")
+    print("7. Comment from Franco")
+    print("8. Exit")
     print("=========================================")
     
     try:
@@ -117,6 +118,11 @@ def display_lopez_comment():
     print("Comment from Lopez:")
     print("Good implementation of password strength validation with "
           + "clear feedback!")
+    input("\nPress Enter to Continue...")
+
+def display_franco_comment():
+    print("Comment from Franco:")
+    print("Your code really looks professional. Nice!")
     input("\nPress Enter to Continue...")
 
 def miko():
