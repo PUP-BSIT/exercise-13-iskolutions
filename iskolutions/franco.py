@@ -27,7 +27,6 @@ def basic_information():
     print("Location: Bagumbayan, Taguig City, Philippines")
     print("School: Polytechnic University of the Philippines")
     print("Course: Bachelor of Science in Information Technology")
-
     print_border()
     return_to_main_menu()
 
@@ -38,7 +37,6 @@ def goals():
     print("2. To contribute to major projects that will be impactful.")
     print("3. To learn new programming languages and frameworks.")
     print("4. To build a personal portfolio website (on going).")
-
     print_border()
     return_to_main_menu()
 
@@ -113,7 +111,6 @@ def pearl():
 
     while True:
         clear_screen()
-
         print("Hello there, I am Fernette Pearl Franco!")
         print_border()
         print("1. Basic Information")
