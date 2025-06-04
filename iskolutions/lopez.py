@@ -46,6 +46,7 @@ def display_information():
     print("Civil Status: Single")
     print("Nationality: Filipino")
     print("\nPress Enter to continue...")
+    input()
 
 def display_goals():
     system("cls")
@@ -58,6 +59,7 @@ def display_goals():
           + " external-facing opportunities")
     print("-To pass INTEG 202 course this 2024-2025 school year")
     print("\nPress Enter to continue...")
+    input()
 
 def get_weather_information():
     system("cls")
