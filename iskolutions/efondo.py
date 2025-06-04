@@ -2,7 +2,7 @@ from os import system
 import random
 
 UNSET_OPTION = -1
-EXIT_OPTION = 7
+EXIT_OPTION = 8
 
 def get_choice():
     system("cls")
@@ -13,7 +13,8 @@ def get_choice():
     print("4. Comment from Causon")
     print("5. Comment from Gagtan")
     print("6. Comment from Lopez")
-    print("7. Exit")
+    print("7. Comment from Franco")
+    print("8. Exit")
     print("========================================")
 
     try:
@@ -40,6 +41,8 @@ def process_choice(choice):
         case 6:
             display_lopez_comment()
         case 7:
+            display_franco_comment()
+        case 8:
             system("cls")
         case _:
             print("Invalid choice! Please select a valid option.")
@@ -112,6 +115,11 @@ def display_lopez_comment():
           + "your programming skills.")
     input("\nPress Enter to Continue...")
 
+def display_franco_comment():
+    print("Comment from Franco:")
+    print("Great structure and creativity. Keep it up!")
+    input("\nPress Enter to Continue...")
+    
 def kyle():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
