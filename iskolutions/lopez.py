@@ -29,7 +29,9 @@ def process_choice(choice):
         case 4:
             pass # TODO: replace function call
         case _:
-            pass # TODO: replace function call
+            print("\nInvalid choice! Enter a valid option.")
+            print("Press any key to continue...")
+            input()
 
 def display_information():
     print("\nGet to know me better:")
