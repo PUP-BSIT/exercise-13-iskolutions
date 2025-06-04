@@ -5,6 +5,7 @@ UNSET_OPTION = -1
 EXIT_OPTION = 4
 
 def display_get_choice():
+    system("cls")
     print("=== WELCOME TO JAKIM LOPEZ'S PROFILE ===")
     print("1. Get to know me better")
     print("2. Goals in life")
