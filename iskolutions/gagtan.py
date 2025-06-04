@@ -36,7 +36,17 @@ def process_choice(choice):
             print("Invalid choice! Please select a valid option.")
             input("Press Enter to continue...")
             system("cls")
-            
+
+def display_basic_information():
+    system("cls")
+    print("Name: Hanz Matthew A.Gagtan")
+    print("Gender: Male")
+    print("Birthday: February 5, 2005")
+    print("Civil Status: Single")
+    print("Nationality: Filipino")
+    print("Hobbies: Playing guitar, composing songs, and gaming")
+    input("\nPress enter to continue...")
+    
 def hanz():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
