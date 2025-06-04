@@ -47,6 +47,14 @@ def display_basic_information():
     print("Hobbies: Playing guitar, Composing songs, and gaming")
     input("\nPress enter to continue...")
 
+def display_goals():
+    system("cls")
+    print("1. Become a skilled Frontend developer")
+    print("2. Travel the world and explore new cultures")
+    print("3. Build a successful career in tech and other industries")
+    print("4. Support my family and my Community")
+    input("\nPress enter to continue...")
+
 def hanz():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
