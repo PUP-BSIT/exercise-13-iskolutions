@@ -33,7 +33,6 @@ def process_choice(choice):
             franco.pearl()
         case 4:
             gagtan.hanz()
-            pass
         case 5:
             lopez.jakim()
         case 6:
