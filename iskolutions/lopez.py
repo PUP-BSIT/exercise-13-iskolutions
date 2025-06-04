@@ -31,7 +31,7 @@ def process_choice(choice):
         case 4:
             system("cls")
         case _:
-            print("Press any key to continue...")
+            print("Press Enter to continue...")
             input()
             system("cls")
 
@@ -45,7 +45,7 @@ def display_information():
     print("Location: Wawa, Taguig City")
     print("Civil Status: Single")
     print("Nationality: Filipino")
-    print("\nPress any key to continue...")
+    print("\nPress Enter to continue...")
 
 def display_goals():
     system("cls")
@@ -57,7 +57,7 @@ def display_goals():
     print("-To strengthen my technical foundation for future "
           + " external-facing opportunities")
     print("-To pass INTEG 202 course this 2024-2025 school year")
-    print("\nPress any key to continue...")
+    print("\nPress Enter to continue...")
 
 def get_weather_information():
     system("cls")
@@ -91,7 +91,7 @@ def get_weather_information():
               + "Either it is an (1) invalid city or (2) check your "
               + "internet connection and try again.")
         
-    print("\nPress any key to continue...")
+    print("\nPress Enter to continue...")
     input()
     return weather_data
 
