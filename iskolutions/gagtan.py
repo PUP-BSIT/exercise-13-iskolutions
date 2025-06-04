@@ -12,7 +12,7 @@ def get_choice():
     print("3. Advice Generator")
     print("4. Comment from Causon")
     print("5. Comment from Efondo")
-    print("5. Exit")
+    print("6. Exit")
     print("===============================================")
 
     try:
