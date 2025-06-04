@@ -7,6 +7,7 @@ WEATHER_BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 # NOTE: API key should be stored in a .env file or as an environment 
 # variable instead of being hardcoded in the source code
 API_KEY = "aacae991094d7dae63e3a2b8bba7872c"
+HTTPS_STATUS_OK = 200
 
 def display_get_choice():
     system("cls")
