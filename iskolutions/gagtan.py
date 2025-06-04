@@ -22,6 +22,21 @@ def get_choice():
         print("Invalid input! Please enter a number")
         return UNSET_OPTION
 
+def process_choice(choice):
+    match choice:
+        case 1:
+            display_basic_information()
+        case 2: 
+            display_goals()
+        case 3:
+            advice_generator()
+        case 4:
+            system("cls")
+        case _:
+            print("Invalid choice! Please select a valid option.")
+            input("Press Enter to continue...")
+            system("cls")
+            
 def hanz():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
