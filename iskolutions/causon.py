@@ -2,7 +2,7 @@ from os import system
 import re
 
 UNSET_OPTION = -1
-EXIT_OPTION = 4
+EXIT_OPTION = 5
 
 def display_get_choice():
     system("cls")
@@ -10,7 +10,8 @@ def display_get_choice():
     print("1. Basic Information")
     print("2. Goals")
     print("3. Password Checker")
-    print("4. Exit")
+    print("4. Comment from Efondo")
+    print("5. Exit")
     print("=========================================")
     
     try:
@@ -31,6 +32,8 @@ def process_choice(choice):
         case 3:
             password_checker()
         case 4:
+            display_efondo_comment()
+        case 5:
             system("cls")
         case _:
             print("Invalid choice! Please select a valid option.")
@@ -94,6 +97,11 @@ def password_checker():
           + f"(Length: {length} Criteria Passed: {criterias_passed})")
     input("\nPress Enter to Continue...")
     
+def display_efondo_comment():
+    print("Comment from Efondo: ")
+    print("Nice use of regex for password checking!")
+    input("\nPress Enter to continue...")
+
 def miko():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
