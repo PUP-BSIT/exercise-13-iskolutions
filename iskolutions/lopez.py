@@ -84,7 +84,7 @@ def get_weather_information():
     response = requests.get(f"{WEATHER_BASE_URL}?q={input_city} "
                             + f"&appid={API_KEY}&units=metric")
 
-    if response.status_code == 200:
+    if response.status_code == HTTPS_STATUS_OK:
         data = response.json()
         temperature = data['main']['temp']
         weather = data['weather'][0]['description']
