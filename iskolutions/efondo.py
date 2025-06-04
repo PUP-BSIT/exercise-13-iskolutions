@@ -89,6 +89,7 @@ def rock_paper_scissors():
             break
 
 def display_causon_comment():
+    print("Comment from Causon: ")
     print("Good job on your programming journey in INTE 202!"
           + " Keep it up!")
     input("\nPress Enter to Continue...")
