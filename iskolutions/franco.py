@@ -91,7 +91,7 @@ def comment_section(comment_id):
                 + " good job!", 
         '6': "COMMENT FROM EFONDO:\nExcellent use of dictionary, keep it up!",
         '7': "COMMENT FROM GAGTAN:\nGreat job on the random fact feature!", 
-        '8': "COMMENT FROM LOPEZ:\n"   #TODO(Lopez): Add comment here
+        '8': "COMMENT FROM LOPEZ:\nFun Feature that you've added! Great job!"
     }
 
     print_border()
