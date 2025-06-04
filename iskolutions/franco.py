@@ -27,7 +27,6 @@ def basic_information():
     print("Location: Bagumbayan, Taguig City, Philippines")
     print("School: Polytechnic University of the Philippines")
     print("Course: Bachelor of Science in Information Technology")
-
     print_border()
     return_to_main_menu()
 
@@ -38,7 +37,6 @@ def goals():
     print("2. To contribute to major projects that will be impactful.")
     print("3. To learn new programming languages and frameworks.")
     print("4. To build a personal portfolio website (on going).")
-
     print_border()
     return_to_main_menu()
 
@@ -87,11 +85,11 @@ def random_fact():
 
 def comment_section(comment_id):
     comments = {
-        '5': "COMMENT FROM CAUSON:\nIt is nice to use dictionaries in this way,"
+        '4': "COMMENT FROM CAUSON:\nIt is nice to use dictionaries in this way,"
                 + " good job!", 
-        '6': "COMMENT FROM EFONDO:\nExcellent use of dictionary, keep it up!",
-        '7': "COMMENT FROM GAGTAN:\nGreat job on the random fact feature!", 
-        '8': "COMMENT FROM LOPEZ:\nFun feature that you've added! Great job!"
+        '5': "COMMENT FROM EFONDO:\nExcellent use of dictionary, keep it up!",
+        '6': "COMMENT FROM GAGTAN:\nGreat job on the random fact feature!", 
+        '7': "COMMENT FROM LOPEZ:\nFun feature that you've added! Great job!"
     }
 
     print_border()
@@ -105,15 +103,14 @@ def pearl():
         "1": basic_information,
         "2": goals,
         "3": random_fact,
-        "4": lambda: comment_section('5'),
-        "5": lambda: comment_section('6'),
-        "6": lambda: comment_section('7'),
-        "7": lambda: comment_section('8')
+        "4": lambda: comment_section('4'),
+        "5": lambda: comment_section('5'),
+        "6": lambda: comment_section('6'),
+        "7": lambda: comment_section('7')
     }
 
     while True:
         clear_screen()
-
         print("Hello there, I am Fernette Pearl Franco!")
         print_border()
         print("1. Basic Information")
@@ -130,6 +127,8 @@ def pearl():
 
         if choice == '8':
             print("Thank you for visiting! Goodbye!")
+            input("Press Enter to exit...")
+            clear_screen()
             break
         elif choice in menu_options:
             display_section(menu_options[choice])
