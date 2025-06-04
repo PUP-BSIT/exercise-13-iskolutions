@@ -13,8 +13,10 @@ def display_get_choice():
 
     try:
         choice = int(input("Enter your choice:"))
+        system("cls")
         return choice
     except ValueError:
+        system("cls")
         print("Invalid input.")
         return UNSET_OPTION
     
@@ -27,13 +29,15 @@ def process_choice(choice):
         case 3:
             get_weather_information()
         case 4:
-            pass # TODO: replace function call
+            system("cls")
         case _:
             print("\nInvalid choice! Enter a valid option.")
             print("Press any key to continue...")
             input()
+            system("cls")
 
 def display_information():
+    system("cls")
     print("\nGet to know me better:")
     print("Name: Jakim D. Lopez")
     print("Age: 20")
@@ -45,6 +49,7 @@ def display_information():
     print("\nPress any key to continue...")
 
 def display_goals():
+    system("cls")
     print("\nGoals in life:")
     print("-To improve my skills in writing clean, structured, and "
           + " maintainable code")
@@ -56,6 +61,7 @@ def display_goals():
     print("\nPress any key to continue...")
 
 def get_weather_information():
+    system("cls")
     print("=== WEATHER UPDATE ===")
     input_city = input("Enter any city around the world that "
                        + "you want to check the weather "
