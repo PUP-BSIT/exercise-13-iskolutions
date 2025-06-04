@@ -89,7 +89,7 @@ def comment_section(comment_id):
     comments = {
         '5': "COMMENT FROM CAUSON:\nIt is nice to use dictionaries in this way,"
                 + " good job!", 
-        '6': "COMMENT FROM EFONDO:\n", #TODO(Efondo): Add comment here
+        '6': "COMMENT FROM EFONDO:\nExcellent use of dictionary, keep it up!",
         '7': "COMMENT FROM GAGTAN:\n", #TODO(Gagtan): Add comment here
         '8': "COMMENT FROM LOPEZ:\n"   #TODO(Lopez): Add comment here
     }
