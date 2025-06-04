@@ -8,7 +8,7 @@ def display_get_choice():
     print("============Select an Option============")
     print("1. Miko Lorenz O. Causon")
     print("2. Aaron Kyle D. Efondo")
-    print("3. Fernette Pearl Franco")
+    print("3. Fernette Pearl M. Franco")
     print("4. Hanz Matthew A. Gagtan")
     print("5. Jakim D. Lopez")
     print("6. Exit")
