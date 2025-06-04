@@ -2,7 +2,7 @@ from os import system
 import requests
 
 UNSET_OPTION = -1
-EXIT_OPTION = 4
+EXIT_OPTION = 5
 WEATHER_BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 API_KEY = "aacae991094d7dae63e3a2b8bba7872c"
 HTTPS_STATUS_OK = 200
@@ -13,7 +13,8 @@ def display_get_choice():
     print("1. Get to know me better")
     print("2. Goals in life")
     print("3. Weather Update")
-    print("4. Exit")
+    print("4. Comment from Causon")
+    print("5. Exit")
 
     try:
         choice = int(input("Enter your choice:"))
@@ -33,6 +34,8 @@ def process_choice(choice):
         case 3:
             get_weather_information()
         case 4:
+            display_causon_comment()
+        case 5:
             system("cls")
         case _:
             print("Press Enter to continue...")
@@ -97,6 +100,12 @@ def get_weather_information():
     print("\nPress Enter to continue...")
     input()
     return weather_data
+
+def display_causon_comment():
+    print("Comment from Causon: ")
+    print("You really did a good job at studying programming!" 
+          + "You even used APIs, keep up the good work!")
+    input("\nPress Enter to continue...")
 
 def jakim():
     choice = UNSET_OPTION

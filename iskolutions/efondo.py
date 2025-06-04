@@ -2,7 +2,7 @@ from os import system
 import random
 
 UNSET_OPTION = -1
-EXIT_OPTION = 4
+EXIT_OPTION = 5
 
 def get_choice():
     system("cls")
@@ -10,7 +10,8 @@ def get_choice():
     print("1. Basic Information")
     print("2. Goals")
     print("3. Rock, Paper, Scissors")
-    print("4. Exit")
+    print("4. Comment from Causon")
+    print("5. Exit")
     print("========================================")
 
     try:
@@ -31,6 +32,8 @@ def process_choice(choice):
         case 3:
             rock_paper_scissors()
         case 4:
+            display_causon_comment()
+        case 5:
             system("cls")
         case _:
             print("Invalid choice! Please select a valid option.")
@@ -84,6 +87,12 @@ def rock_paper_scissors():
         if play_again != 'y':
             print("Thanks for playing")
             break
+
+def display_causon_comment():
+    print("Comment from Causon: ")
+    print("Good job on your programming journey in INTE 202!"
+          + " Keep it up!")
+    input("\nPress Enter to Continue...")
 
 def kyle():
     choice = UNSET_OPTION
