@@ -32,7 +32,7 @@ def process_choice(choice):
         case 3:
             advice_generator()
         case 4:
-            system("cls")
+            display_causon_comment()
         case 5:
             system("cls")
         case _:
