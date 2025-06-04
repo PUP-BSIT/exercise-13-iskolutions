@@ -127,6 +127,8 @@ def pearl():
 
         if choice == '8':
             print("Thank you for visiting! Goodbye!")
+            input("Press Enter to exit...")
+            clear_screen()
             break
         elif choice in menu_options:
             display_section(menu_options[choice])
