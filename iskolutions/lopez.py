@@ -43,6 +43,8 @@ def process_choice(choice):
         case 6:
             display_gagtan_comment()
         case 7:
+            display_franco_comment()
+        case 8:
             system("cls")
         case _:
             print("Press Enter to continue...")
