@@ -76,7 +76,7 @@ def get_weather_information():
 
     if not input_city:
         print("\nInvalid input! Enter a valid city name.")
-        return {}
+        return None
 
     weather_data = {}
 
