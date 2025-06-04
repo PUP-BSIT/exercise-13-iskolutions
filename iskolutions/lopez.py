@@ -3,6 +3,9 @@ import requests
 
 UNSET_OPTION = -1
 EXIT_OPTION = 4
+WEATHER_BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+API_KEY = "aacae991094d7dae63e3a2b8bba7872c"
+HTTPS_STATUS_OK = 200
 
 def display_get_choice():
     system("cls")
@@ -71,18 +74,15 @@ def get_weather_information():
 
     if not input_city:
         print("\nInvalid input! Enter a valid city name.")
-        return {}
+        return None
 
     weather_data = {}
 
     # API key from OpenWeatherMap (rate-limited upto 60 calls/minute)
-    url = ('http://api.openweathermap.org/data/2.5/weather?q'
-           + f'={input_city}&appid=aacae991094d7dae63e3a2b8bba7872c'
-           + '&units=metric')
-    
-    response = requests.get(url)
+    response = requests.get(f"{WEATHER_BASE_URL}?q={input_city} "
+                            + f"&appid={API_KEY}&units=metric")
 
-    if response.status_code == 200:
+    if response.status_code == HTTPS_STATUS_OK:
         data = response.json()
         temperature = data['main']['temp']
         weather = data['weather'][0]['description']
