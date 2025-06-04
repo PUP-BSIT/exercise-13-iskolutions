@@ -2,7 +2,7 @@ from os import system
 import random
 
 UNSET_OPTION = -1
-EXIT_OPTION = 5
+EXIT_OPTION = 6
 
 def get_choice():
     system("cls")
@@ -11,7 +11,8 @@ def get_choice():
     print("2. Goals")
     print("3. Rock, Paper, Scissors")
     print("4. Comment from Causon")
-    print("5. Exit")
+    print("5. Comment from Gagtan")
+    print("6. Exit")
     print("========================================")
 
     try:
@@ -34,6 +35,8 @@ def process_choice(choice):
         case 4:
             display_causon_comment()
         case 5:
+            display_gagtan_comment()
+        case 6:
             system("cls")
         case _:
             print("Invalid choice! Please select a valid option.")
@@ -92,6 +95,11 @@ def display_causon_comment():
     print("Comment from Causon: ")
     print("Good job on your programming journey in INTE 202!"
           + " Keep it up!")
+    input("\nPress Enter to Continue...")
+
+def display_gagtan_comment():
+    print("Comment from Gagtan: ")
+    print("Great work, Kyle! Your dedication to learning")
     input("\nPress Enter to Continue...")
 
 def kyle():
