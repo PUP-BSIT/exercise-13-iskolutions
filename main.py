@@ -1,4 +1,4 @@
-from iskolutions import causon, efondo, franco, lopez
+from iskolutions import causon, efondo, franco, lopez,gagtan
 from os import system
 
 UNSET_OPTION = -1
@@ -32,7 +32,7 @@ def process_choice(choice):
         case 3:
             franco.pearl()
         case 4:
-            # TODO (Gagtan): replace your function call here
+            gagtan.hanz()
             pass
         case 5:
             lopez.jakim()
