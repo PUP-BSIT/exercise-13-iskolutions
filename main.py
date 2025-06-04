@@ -36,7 +36,6 @@ def process_choice(choice):
             pass
         case 5:
             lopez.jakim()
-            pass
         case 6:
             system("cls")
         case _:
