@@ -17,7 +17,7 @@ def display_get_choice():
         return choice
     except ValueError:
         system("cls")
-        print("Invalid input.")
+        print("\nInvalid choice! Enter a valid option.")
         return UNSET_OPTION
     
 def process_choice(choice):
@@ -31,7 +31,6 @@ def process_choice(choice):
         case 4:
             system("cls")
         case _:
-            print("\nInvalid choice! Enter a valid option.")
             print("Press any key to continue...")
             input()
             system("cls")
