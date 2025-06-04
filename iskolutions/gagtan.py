@@ -2,7 +2,7 @@ from os import system
 import random
 
 UNSET_OPTION = -1
-EXIT_OPTION = 4
+EXIT_OPTION = 5
 
 def get_choice():
     system("cls")
@@ -10,7 +10,8 @@ def get_choice():
     print("1. Basic Information")
     print("2. Goals")
     print("3. Advice Generator")
-    print("4. Exit")
+    print("4. Comment from Causon")
+    print("5. Exit")
     print("===============================================")
 
     try:
@@ -31,6 +32,8 @@ def process_choice(choice):
         case 3:
             advice_generator()
         case 4:
+            system("cls")
+        case 5:
             system("cls")
         case _:
             print("Invalid choice! Please select a valid option.")
@@ -72,6 +75,11 @@ def advice_generator():
     input("Press Enter to get advice...")
     print("\nHanz says:", random.choice(advices))
     input("\nPress Enter to go back...")
+    
+def display_causon_comment():
+    print("Comment from Causon: ")
+    print("Don't give up and study even harder! We are always here for you!")
+    input("\nPress Enter to Continue...")
 
 def hanz():
     choice = UNSET_OPTION
