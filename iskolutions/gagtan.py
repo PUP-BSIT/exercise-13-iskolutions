@@ -55,6 +55,24 @@ def display_goals():
     print("4. Support my family and my Community")
     input("\nPress enter to continue...")
 
+def advice_generator():
+    system("cls")
+    advices = [
+        "Keep pushing forward!",
+        "Consistency beats motivation.",
+        "Rest is productive too.",
+        "You are capable of great things.",
+        "Start small, but start now.",
+        "Don’t compare your Chapter 1 to someone else’s Chapter 10.",
+        "Growth happens when you're uncomfortable.",
+        "Discipline will take you places motivation can't.",
+        "You don’t have to be perfect—just keep showing up."
+    ]
+
+    input("Press Enter to get advice...")
+    print("\nHanz says:", random.choice(advices))
+    input("\nPress Enter to go back...")
+
 def hanz():
     choice = UNSET_OPTION
     while choice != EXIT_OPTION:
