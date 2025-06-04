@@ -38,7 +38,7 @@ def process_choice(choice):
         case 5:
             display_gagtan_comment()
         case 6:
-            display_lopez_comment
+            display_lopez_comment()
         case 7:
             system("cls")
         case _:
