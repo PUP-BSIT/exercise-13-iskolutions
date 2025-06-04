@@ -41,6 +41,8 @@ def process_choice(choice):
         case 6:
             display_lopez_comment()
         case 7:
+            display_franco_comment()
+        case 8:
             system("cls")
         case _:
             print("Invalid choice! Please select a valid option.")
