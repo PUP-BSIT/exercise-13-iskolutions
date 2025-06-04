@@ -81,11 +81,8 @@ def get_weather_information():
     weather_data = {}
 
     # API key from OpenWeatherMap (rate-limited upto 60 calls/minute)
-    url = ('http://api.openweathermap.org/data/2.5/weather?q'
-           + f'={input_city}&appid=aacae991094d7dae63e3a2b8bba7872c'
-           + '&units=metric')
-    
-    response = requests.get(url)
+    response = requests.get(f"{WEATHER_BASE_URL}?q={input_city} "
+                            + f"&appid={API_KEY}&units=metric")
 
     if response.status_code == 200:
         data = response.json()
