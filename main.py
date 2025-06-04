@@ -1,4 +1,4 @@
-from iskolutions import causon, efondo, franco, lopez,gagtan
+from iskolutions import causon, efondo, franco, lopez, gagtan
 from os import system
 
 UNSET_OPTION = -1
