@@ -1,4 +1,4 @@
-from iskolutions import causon, efondo, franco, lopez
+from iskolutions import causon, efondo, franco, lopez, gagtan
 from os import system
 
 UNSET_OPTION = -1
@@ -9,7 +9,7 @@ def display_get_choice():
     print("1. Miko Lorenz O. Causon")
     print("2. Aaron Kyle D. Efondo")
     print("3. Fernette Pearl Franco")
-    print("4. ")
+    print("4. Hanz Matthew A. Gagtan")
     print("5. Jakim D. Lopez")
     print("6. Exit")
     print("========================================")
@@ -32,8 +32,7 @@ def process_choice(choice):
         case 3:
             franco.pearl()
         case 4:
-            # TODO (Gagtan): replace your function call here
-            pass
+            gagtan.hanz()
         case 5:
             lopez.jakim()
         case 6:
